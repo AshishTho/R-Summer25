@@ -12,11 +12,13 @@ This repository contains R programming exercises and data analysis projects comp
 R-Summer25/
 ├── data/
 │   ├── squid.xlsx          # Original Excel dataset
-│   └── squid1.txt          # Tab-delimited version of squid data
+│   ├── squid1.txt          # Tab-delimited version of squid data
+│   └── car_values.csv      # Car sales dataset for statistical analysis
 ├── exercises/
 │   ├── exercise-1-AThomas.R    # Basic R fundamentals
 │   ├── exercise-2-AThomas.R    # Vector operations and statistics
-│   └── exercise-3-Athomas.R    # Data import and visualization
+│   ├── exercise-3-Athomas.R    # Data import and visualization
+│   └── exercise-4-Athomas.R    # Custom functions and variance validation
 ├── output/
 │   ├── DML-OvaryWeight-Scatter.png
 │   ├── DML-Weight-Scatter.png
@@ -67,7 +69,38 @@ R-Summer25/
 - Scatter plot visualizations
 - Package management and dependencies
 
+### Exercise 4: Custom Functions & Statistical Validation (exercise-4-Athomas.R)
+**Date**: 2025-07-18  
+**Focus**: Function development and statistical method validation
+- **Dataset**: Real-world car sales data (*car_values.csv*)
+- Custom helper function development
+- Tidyverse-style function implementation
+- Statistical method verification and benchmarking
+
+**Key Components**:
+- **Helper Functions**:
+  - `prop_missing()`: Calculate proportion of missing values
+  - `prop_share()`: Compute relative proportions (0-1 scale)
+  - `prop_percent()`: Convert to percentage format
+  - `my_variance()`: Custom sample variance function
+- **Validation Testing**: Compare custom variance function against base R `var()`
+- **Real Data Application**: Analysis of car price and mileage variance
+- **Automated Testing**: `stopifnot()` assertions for quality assurance
+
+**Statistical Verification Results**:
+- Price variance: ~97,710,314.86
+- Mileage variance: ~67,179,656.74
+- All custom functions validated against base R equivalents
+
 ## Dataset Information
+
+### Car Sales Dataset (*car_values.csv*)
+A comprehensive automotive dataset containing:
+- **Price**: Vehicle sale prices (USD)
+- **Mileage**: Vehicle odometer readings
+- **Additional Features**: Cylinder count, doors, cruise control, sound system, leather, etc.
+- **Sample Size**: 804 vehicle records
+- **Purpose**: Statistical function validation and real-world data analysis
 
 ### Squid Dataset (*Loligo forbesii*)
 The primary dataset contains biological measurements from squid specimens, focusing on:
@@ -91,7 +124,8 @@ The analysis produces several visualization files:
 
 ### Required R Packages:
 - `dplyr`: Data manipulation and transformation
-- `ggplot2`: Advanced data visualization
+- `ggplot2`: Advanced data visualization  
+- `tidyverse`: Comprehensive data science package collection (includes dplyr, ggplot2, readr, etc.)
 
 The scripts include automatic package installation if packages are not already present.
 
@@ -100,13 +134,14 @@ The scripts include automatic package installation if packages are not already p
 1. **Weeks 1-2**: Basic R syntax, variables, and simple operations
 2. **Weeks 3-4**: Vector manipulation, statistical functions, and data subsetting
 3. **Weeks 5-6**: Real dataset analysis, visualization, and biological interpretation
+4. **Weeks 7-8**: Custom function development, code reusability, and statistical validation
 
 ## Usage Instructions
 
 1. Ensure R and RStudio are installed
 2. Set the working directory to the project root
-3. Run exercises in order (1 → 2 → 3) to follow the learning progression
-4. Required packages will be automatically installed when running Exercise 3
+3. Run exercises in order (1 → 2 → 3 → 4) to follow the learning progression
+4. Required packages will be automatically installed when running Exercise 3 and 4
 
 ## Key Learning Outcomes
 
@@ -114,6 +149,8 @@ The scripts include automatic package installation if packages are not already p
 - Statistical data analysis workflows
 - Biological data interpretation
 - Data visualization best practices
+- Custom function development and testing
+- Statistical method validation
 - Reproducible research principles
 
 ---

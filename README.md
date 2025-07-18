@@ -1,0 +1,121 @@
+# R Summer 2025 - Learning Exercises
+
+## Overview
+This repository contains R programming exercises and data analysis projects completed during Summer 2025. The workspace includes progressive exercises demonstrating fundamental R concepts, data manipulation, and biological data visualization.
+
+## Author
+**Ashish Thomas** (pronounced uh-SHEESH TAH-muhs)
+
+## Project Structure
+
+```
+R-Summer25/
+├── data/
+│   ├── squid.xlsx          # Original Excel dataset
+│   └── squid1.txt          # Tab-delimited version of squid data
+├── exercises/
+│   ├── exercise-1-AThomas.R    # Basic R fundamentals
+│   ├── exercise-2-AThomas.R    # Vector operations and statistics
+│   └── exercise-3-Athomas.R    # Data import and visualization
+├── output/
+│   ├── DML-OvaryWeight-Scatter.png
+│   ├── DML-Weight-Scatter.png
+│   └── Pairs.png
+├── scripts/
+└── README.md
+```
+
+## Exercise Descriptions
+
+### Exercise 1: R Fundamentals (exercise-1-AThomas.R)
+**Date**: 2025-06-28  
+**Focus**: Basic R syntax and operations
+- Variable creation and manipulation
+- Sequence generation (ascending/descending)
+- Basic descriptive statistics (mean, variance, standard deviation)
+- Environment management (creating and removing objects)
+
+### Exercise 2: Vector Operations (exercise-2-AThomas.R)
+**Date**: 2025-07-02  
+**Focus**: Working with vectors and basic statistics
+- Created weight and height vectors for 10 children
+- Computed descriptive statistics (mean, variance, range, etc.)
+- Data subsetting and filtering
+- BMI calculations
+- Vector sorting and ordering operations
+- Named data manipulation
+
+**Key Concepts Covered**:
+- Vector indexing and subsetting
+- Conditional filtering
+- Data transformation (unit conversion)
+- Ordering and sorting algorithms
+
+### Exercise 3: Biological Data Analysis (exercise-3-Athomas.R)
+**Date**: 2025-07-09  
+**Focus**: Real-world data analysis with squid dataset
+- **Dataset**: *Loligo forbesii* (squid) seasonal investment data
+- Data import from tab-delimited files
+- Data cleaning and factor recoding
+- Exploratory data analysis
+- Data visualization with ggplot2
+
+**Analysis Components**:
+- Seasonal patterns in somatic and reproductive tissues
+- Factor conversion (year, month, maturity stages)
+- Cross-tabulation analysis
+- Scatter plot visualizations
+- Package management and dependencies
+
+## Dataset Information
+
+### Squid Dataset (*Loligo forbesii*)
+The primary dataset contains biological measurements from squid specimens, focusing on:
+- **Temporal variables**: Year and month of collection
+- **Biological measurements**: Weight, length measurements
+- **Reproductive data**: Maturity stages, ovary weight
+- **Morphometric data**: Dorsal mantle length (DML)
+
+**Data Files**:
+- `squid.xlsx`: Original Excel format
+- `squid1.txt`: Tab-delimited version for R import
+
+## Generated Outputs
+
+The analysis produces several visualization files:
+- **DML-OvaryWeight-Scatter.png**: Relationship between dorsal mantle length and ovary weight
+- **DML-Weight-Scatter.png**: Dorsal mantle length vs total weight correlation
+- **Pairs.png**: Multi-variable correlation matrix visualization
+
+## Dependencies
+
+### Required R Packages:
+- `dplyr`: Data manipulation and transformation
+- `ggplot2`: Advanced data visualization
+
+The scripts include automatic package installation if packages are not already present.
+
+## Learning Progression
+
+1. **Weeks 1-2**: Basic R syntax, variables, and simple operations
+2. **Weeks 3-4**: Vector manipulation, statistical functions, and data subsetting
+3. **Weeks 5-6**: Real dataset analysis, visualization, and biological interpretation
+
+## Usage Instructions
+
+1. Ensure R and RStudio are installed
+2. Set the working directory to the project root
+3. Run exercises in order (1 → 2 → 3) to follow the learning progression
+4. Required packages will be automatically installed when running Exercise 3
+
+## Key Learning Outcomes
+
+- Fundamental R programming concepts
+- Statistical data analysis workflows
+- Biological data interpretation
+- Data visualization best practices
+- Reproducible research principles
+
+---
+
+*This repository represents a comprehensive introduction to R programming with applications in biological data analysis.*

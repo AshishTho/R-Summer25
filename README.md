@@ -4,7 +4,7 @@
 This repository contains R programming exercises and data analysis projects completed during Summer 2025, including a comprehensive final project analyzing macroeconomic indicators and S&P 500 returns.
 
 ## Author
-**Ashish Thomas** (pronounced uh-SHEESH TAH-muhs)
+**Ashish Thomas** 
 
 ## Project Structure
 

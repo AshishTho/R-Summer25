@@ -1,7 +1,7 @@
-# R Summer 2025 - Learning Exercises
+# R Summer 2025 - Learning Exercises & Final Project
 
 ## Overview
-This repository contains R programming exercises and data analysis projects completed during Summer 2025. The workspace includes progressive exercises demonstrating fundamental R concepts, data manipulation, and biological data visualization.
+This repository contains R programming exercises and data analysis projects completed during Summer 2025, including a comprehensive final project analyzing macroeconomic indicators and S&P 500 returns.
 
 ## Author
 **Ashish Thomas** (pronounced uh-SHEESH TAH-muhs)
@@ -24,8 +24,34 @@ R-Summer25/
 │   ├── DML-Weight-Scatter.png
 │   └── Pairs.png
 ├── scripts/
+├── final_project.Rmd       # Final project R Markdown file
+├── references.bib          # Bibliography for final project
 └── README.md
 ```
+
+## Final Project: Macroeconomic Indicators and S&P 500 Returns
+
+### Research Question
+Do lagged unemployment and inflation explain subsequent S&P 500 quarterly total returns (1980‑2024)?
+
+### Data Sources
+- **UNRATE**: Civilian unemployment rate (Monthly, %)
+- **CPIAUCSL**: Consumer Price Index (Monthly, index)
+- **^GSPC**: S&P 500 close prices (Daily, index)
+
+All data retrieved from Federal Reserve Economic Data (FRED) API.
+
+### Key Features
+- Automated data download from FRED API
+- Quarterly data aggregation and alignment
+- Newey-West heteroskedasticity-corrected standard errors
+- Professional visualizations and statistical analysis
+- Complete reproducible workflow
+
+### How to Run Final Project
+1. Open `final_project.Rmd` in RStudio
+2. Click "Knit" → "Knit to PDF"
+3. The analysis will automatically download data and generate the PDF report
 
 ## Exercise Descriptions
 

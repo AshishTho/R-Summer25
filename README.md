@@ -20,6 +20,12 @@ R-Summer25/
 │   ├── exercise-2-AThomas.R    # Vector operations and statistics (July 2)
 │   ├── exercise-3-Athomas.R    # Data import and visualization (July 9)
 │   └── exercise-4-Athomas.R    # Custom functions and variance validation (July 18)
+├── final-project/
+│   ├── FINAL_PROJECT_SUBMISSION.md  # Complete submission document
+│   ├── final_project_script.R       # Complete final project analysis
+│   ├── final_project.Rmd           # Final project R Markdown file
+│   ├── final_project_html.Rmd      # HTML version for compatibility
+│   └── references.bib              # Academic bibliography
 ├── output/
 │   ├── DML-OvaryWeight-Scatter.png  # Biological correlation analysis
 │   ├── DML-Weight-Scatter.png       # Morphometric relationships
@@ -28,12 +34,6 @@ R-Summer25/
 │   ├── inflation_plot.png           # Final project: Inflation trends
 │   ├── sp500_plot.png               # Final project: S&P 500 returns
 │   └── scatter_plot.png             # Final project: Predictor relationships
-├── scripts/
-│   └── final_project_script.R       # Complete final project analysis
-├── final_project.Rmd               # Final project R Markdown file
-├── final_project_html.Rmd          # HTML version for compatibility
-├── references.bib                  # Academic bibliography
-├── FINAL_PROJECT_SUBMISSION.md     # Complete submission document
 └── README.md
 ```
 
@@ -70,14 +70,14 @@ This research extends the predictive modeling framework of:
 
 ### How to Reproduce Final Project
 ```r
-# Option 1: R Markdown (PDF output)
-source("scripts/final_project_script.R")
+# Option 1: Run the analysis script
+source("final-project/final_project_script.R")
 
 # Option 2: RStudio
-# Open final_project.Rmd → Knit to PDF
+# Open final-project/final_project.Rmd → Knit to PDF
 
-# Option 3: VS Code (completed)
-# All analysis completed and documented
+# Option 3: View submission document
+# Open final-project/FINAL_PROJECT_SUBMISSION.md
 ```
 
 ---
@@ -233,10 +233,10 @@ library(zoo)          # Time series gap filling
 git clone https://github.com/AshishTho/R-Summer25
 
 # Run complete analysis pipeline
-Rscript scripts/final_project_script.R
+Rscript final-project/final_project_script.R
 
 # Generate academic PDF
-# Open final_project.Rmd in RStudio → Knit to PDF
+# Open final-project/final_project.Rmd in RStudio → Knit to PDF
 ```
 
 ---
@@ -244,22 +244,38 @@ Rscript scripts/final_project_script.R
 ## 🌟 Key Learning Outcomes Achieved
 
 ### Programming Skills
-- ✅ **R Syntax Mastery**: Variables, functions, control structures
-- ✅ **Data Manipulation**: Vector operations, data frame management
-- ✅ **Statistical Programming**: Custom function development and validation
-- ✅ **Professional Visualization**: Publication-quality graphics with ggplot2
+- **R Syntax Mastery**: Variables, functions, control structures
+- **Data Manipulation**: Vector operations, data frame management
+- **Statistical Programming**: Custom function development and validation
+- **Professional Visualization**: Publication-quality graphics with ggplot2
 
 ### Analytical Capabilities  
-- ✅ **Biological Data Analysis**: Marine ecology dataset interpretation
-- ✅ **Financial Econometrics**: Time series modeling with HAC corrections
-- ✅ **Research Methodology**: Hypothesis testing and academic presentation
-- ✅ **Reproducible Research**: Version control and documentation standards
+- **Biological Data Analysis**: Marine ecology dataset interpretation
+- **Financial Econometrics**: Time series modeling with HAC corrections
+- **Research Methodology**: Hypothesis testing and academic presentation
+- **Reproducible Research**: Version control and documentation standards
 
 ### Advanced Techniques
-- ✅ **API Integration**: Automated data retrieval from federal databases
-- ✅ **Frequency Alignment**: Complex temporal data harmonization
-- ✅ **Robust Inference**: Heteroskedasticity and autocorrelation corrections
-- ✅ **Function Validation**: Statistical method verification and benchmarking
+- **API Integration**: Automated data retrieval from federal databases
+- **Frequency Alignment**: Complex temporal data harmonization
+- **Robust Inference**: Heteroskedasticity and autocorrelation corrections
+- **Function Validation**: Statistical method verification and benchmarking
+
+---
+
+## 📁 Project Organization
+
+### **exercises/** - Learning Progression
+Contains the four core R programming exercises that build skills progressively from basic syntax to advanced function development.
+
+### **final-project/** - Capstone Analysis
+Houses all final project materials including the main submission document, R scripts, R Markdown files, and academic references.
+
+### **data/** - Source Datasets
+Stores all raw data files used across exercises and the final project, from biological specimens to economic time series.
+
+### **output/** - Generated Results
+Contains all visualization outputs and analysis results, demonstrating the practical application of learned skills.
 
 ---
 
